@@ -42,3 +42,21 @@ $pecah = $ambil->fetch_assoc();
 		</div>
 	</div>
 </div>
+
+<?php
+if (isset($_POST['ubah'])) {
+
+	$namafoto = $_FILES['foto']['name'];
+	$lokasifoto = $_FILES['foto']['tmp_name'];
+
+	if (!empty($lokasifoto)) {
+		move_uploaded_file($lokasifoto, "../foto/$namafoto");
+
+		$koneksi->query("UPDATE berita SET tanggal='$_POST[tanggal]',judul='$_POST[judul]',foto='$namafoto', isi='$_POST[isi]' WHERE idberita='$_GET[id]'");
+	} else {
+		$koneksi->query("UPDATE berita SET tanggal='$_POST[tanggal]', judul='$_POST[judul]',isi='$_POST[isi]' WHERE idberita='$_GET[id]'");
+	}
+	echo "<script>alert('Data Berhasil Diubah');</script>";
+	echo "<script>location='index.php?halaman=berita';</script>";
+}
+?>
