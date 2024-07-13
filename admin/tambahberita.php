@@ -34,3 +34,16 @@
 		</div>
 	</div>
 </div>
+
+<?php
+if (isset($_POST['save'])) {
+	$namafoto = $_FILES['foto']['name'];
+	$lokasifoto = $_FILES['foto']['tmp_name'];
+	move_uploaded_file($lokasifoto, "../foto/" . $namafoto);
+	$koneksi->query("INSERT INTO berita
+		(tanggal,judul,foto,isi)
+		VALUES('$_POST[tanggal]','$_POST[judul]','$namafoto','$_POST[isi]')");
+	echo "<script>alert('Data Berhasil Di Simpan');</script>";
+	echo "<script> location ='index.php?halaman=berita';</script>";
+}
+?>
