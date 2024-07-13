@@ -1,0 +1,298 @@
+:root {
+    --primary: #6968DF;
+    --secondary: #525368;
+    --light: #CED8E1;
+    --dark: #000000
+}
+
+h1,
+h2 {
+    font-weight: 700 !important
+}
+
+h4 {
+    font-weight: 600 !important
+}
+
+h5,
+h6 {
+    font-weight: 500 !important
+}
+
+.btn {
+    transition: .5s;
+    font-weight: 500
+}
+
+.menuatas .menuatas-brand {
+    height: 80px
+}
+
+.menuatas .menuatas-nav .tombol-link {
+    margin-right: 35px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    outline: 0
+}
+
+.menuatas .menuatas-nav .tombol-link.active,
+.menuatas .menuatas-nav .tombol-link:hover {
+    color: var(--primary)
+}
+
+.menuatas .menuatas-nav .tombol-linkbawah {
+    margin-right: 0px;
+    padding-left: 15px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    outline: 0
+}
+
+.menuatas .menuatas-nav .tombol-linkbawah.active,
+.menuatas .menuatas-nav .tombol-linkbawah:hover {
+    color: var(--primary)
+}
+
+@media (max-width:991.98px) {
+    .menuatas .menuatas-nav .tombol-link {
+        margin-right: 0;
+        padding: 10px 0
+    }
+
+    .menuatas .menuatas-nav .tombol-linkbawah {
+        margin-right: 0;
+        padding: 10px 0
+    }
+
+    .menuatas .menuatas-nav {
+        border-top: 1px solid #eee
+    }
+}
+
+.jumbotronbesar-judul {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+    height: 100%;
+    z-index: 1;
+}
+
+.gambar {
+    min-height: 100%;
+    background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(https://picsum.photos/id/1043/800/600);
+    background-size: cover;
+}
+
+.jumbotronbesar-indicators .active {
+    opacity: 1
+}
+
+.jumbotronbesar-judul {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center
+}
+
+@media (max-width:768px) {
+    #header-jumbotronbesar .jumbotronbesar-item {
+        position: relative;
+        min-height: 450px
+    }
+
+    #header-jumbotronbesar .jumbotronbesar-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+}
+
+.footer {
+    color: var(--light);
+    background: #072a19
+}
+
+.footer a {
+    color: #fff
+}
+
+.footer a:hover {
+    color: var(--primary)
+}
+
+:root {
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+@media (prefers-reduced-motion:no-preference) {
+    :root {
+        scroll-behavior: smooth
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #525368;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: Jost, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #122c3d
+}
+
+h1 {
+    font-size: calc(1.375rem + 1.5vw)
+}
+
+@media (min-width:1200px) {
+    h1 {
+        font-size: 2.5rem
+    }
+}
+
+h2 {
+    font-size: calc(1.325rem + .9vw)
+}
+
+@media (min-width:1200px) {
+    h2 {
+        font-size: 2rem
+    }
+}
+
+h4 {
+    font-size: calc(1.275rem + .3vw)
+}
+
+@media (min-width:1200px) {
+    h4 {
+        font-size: 1.5rem
+    }
+}
+
+h5 {
+    font-size: 1.25rem
+}
+
+h6 {
+    font-size: 1rem
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+b {
+    font-weight: bolder
+}
+
+a {
+    color: #348e38;
+    text-decoration: none
+}
+
+a:hover {
+    color: #2a722d
+}
+
+img {
+    vertical-align: middle
+}
+
+button {
+    border-radius: 0
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0
+}
+
+button,
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+button {
+    text-transform: none
+}
+
+[type=button],
+button {
+    -webkit-appearance: button
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border-style: none
+}
+
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-year-field {
+    padding: 0
+}
+
+::-webkit-inner-spin-button {
+    height: auto
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0
+}
