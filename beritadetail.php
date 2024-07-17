@@ -2,51 +2,58 @@
 session_start();
 include 'koneksi.php';
 ?>
+<?php
+$idberita = $_GET["id"];
+$ambil = $koneksi->query("SELECT*FROM berita WHERE idberita='$idberita'");
+$detail = $ambil->fetch_assoc();
 
+?>
 <?php include 'header.php'; ?>
 <main id="main">
 
-	<div class="breadcrumbs d-flex align-items-center" style="background-image: url('home/assets/img/kc.png');">
+	<div class="breadcrumbs d-flex align-items-center" style="background-image: url('home/assets/img/bgutama.jpg');">
 		<div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-			<h2>E-Madding</h2>
+			<h2>Informasi Selengkapnya</h2>
 			<ol>
 				<li><a href="index.php">Home</a></li>
-				<li>Informasi</li>
+				<li>Info Detail</li>
 			</ol>
 
 		</div>
 	</div>
+	<section id="blog" class="blog">
+		<div class="container" data-aos="fade-up" data-aos-delay="100">
 
-	<section id="recent-blog-posts" class="recent-blog-posts">
-		<div class="container" data-aos="fade-up">
-  <div class=" section-header">
-			<h2>Informasi Terkini</h2>
-		</div>
+			<div class="row g-5">
 
-		<div class="row gy-5">
-			<?php $ambil = $koneksi->query("SELECT *FROM berita"); ?>
-			<?php while ($perberita = $ambil->fetch_assoc()) { ?>
-				<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-					<div class="post-item position-relative h-100">
+				<div class="col-lg-12">
 
-						<div class="post-img position-relative overflow-hidden">
-							<img src="foto/<?php echo $perberita['foto'] ?>" class="img-fluid" alt="">
-							<span class="post-date"><?= $perberita['tanggal'] ?></span>
+					<article class="blog-details">
+
+						<div class="post-img">
+							<img width="100%" src="foto/<?php echo $detail["foto"]; ?>" alt="" class="img-fluid">
 						</div>
 
-						<div class="post-content d-flex flex-column">
+						<h2 class="title"><?php echo $detail['judul'] ?></h2>
 
-							<h3 class="post-title"><?= $perberita['judul'] ?></h3>
-							<hr>
-							<a href="beritadetail.php?id=<?php echo $perberita['idberita']; ?>" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+						<div class="meta-top">
+							<ul>
+								<li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01"><?= $detail['tanggal'] ?></time></a></li>
+							</ul>
 						</div>
-					</div>
+
+						<div class="content">
+							<p>
+								<?php echo $detail["isi"]; ?>
+							</p>
+						</div>
+					</article>
 				</div>
-			<?php } ?>
-		</div>
+			</div>
 		</div>
 	</section>
+
 </main>
 <?php
 include 'footer.php';
