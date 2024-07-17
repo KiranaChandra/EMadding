@@ -80,7 +80,7 @@ function getBulan($bln)
         <div id="wrapper">
             <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #0C356A;">
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php?halaman=beranda">
-                    <div class="sidebar-brand-text mx-3">Admin Panel</sup></div>
+                    <div class="sidebar-brand-text mx-3">Admin Madding</sup></div>
                 </a>
                 <hr class="sidebar-divider">
                 <li class="nav-item">
@@ -92,7 +92,7 @@ function getBulan($bln)
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?halaman=berita">
                         <i class="fas fa-fw fa-pen"></i>
-                        <span>Berita</span></a>
+                        <span>Informasi</span></a>
                 </li>
                 <hr class="sidebar-divider">
                 <li class="nav-item">

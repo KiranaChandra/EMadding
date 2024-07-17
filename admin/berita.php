@@ -5,14 +5,14 @@
 	<div class="col-md-12 mb-4">
 		<div class="card shadow mb-4">
 			<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-				<h6 class="m-0 font-weight-bold text-primary">Data Berita</h6>
+				<h6 class="m-0 font-weight-bold text-primary">Data Informasi</h6>
 			</div>
 			<div class="card-body">
 				<table class="table table-bordered table-striped" id="table">
 					<thead class="bg-primary text-white">
 						<tr>
 							<th>No</th>
-							<th>Judul Berita</th>
+							<th>Judul Informasi</th>
 							<th>Tanggal</th>
 							<th>Foto</th>
 							<th>Aksi</th>
