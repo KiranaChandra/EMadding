@@ -9,10 +9,10 @@ include 'koneksi.php';
 	<div class="breadcrumbs d-flex align-items-center" style="background-image: url('home/assets/img/bgutama.jpg');">
 		<div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-			<h2>E-Madding</h2>
+			<h2>Informasi</h2>
 			<ol>
 				<li><a href="index.php">Home</a></li>
-				<li>E-Madding</li>
+				<li>Informasi</li>
 			</ol>
 
 		</div>
