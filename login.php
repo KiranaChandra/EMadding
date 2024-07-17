@@ -20,7 +20,7 @@ include 'koneksi.php';
 
 	<style>
 		body {
-			background-image: url('bgberita.jpg');
+			background-image: url('home/assets/img/kc.png');
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -55,8 +55,10 @@ include 'koneksi.php';
 	</style>
 
 </head>
+<?php include 'header.php'; ?>
 
 <body>
+	
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-xl-10 col-lg-12 col-md-9">
@@ -72,7 +74,7 @@ include 'koneksi.php';
 									<form class="user" method="post">
 										<div class="form-group">
 											<label for="exampleInputEmail"><i class="fas fa-envelope"></i> E-mail</label>
-											<input type="email" class="form-control form-control-user" id="exampleInputEmail" name="email" aria-describedby="emailHelp" placeholder="Email / Username">
+											<input type="email" class="form-control form-control-user" id="exampleInputEmail" name="email" aria-describedby="emailHelp" placeholder="Email">
 										</div>
 										<div class="form-group">
 											<label for="exampleInputPassword"><i class="fas fa-lock"></i> Password</label>
