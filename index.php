@@ -20,9 +20,9 @@ include 'koneksi.php';
 	</div>
 	<div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-		<div class="carousel-item active" style="background-image: url(home/assets/img/bgutama.jpg)">
+		<div class="carousel-item active" style="background-image: url(home/assets/img/kc.png)">
 		</div>
-		<div class="carousel-item" style="background-image: url(home/assets/img/bgutama.jpg)"></div>
+		<div class="carousel-item" style="background-image: url(home/assets/img/kc.png)"></div>
 		<a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
 		</a>
