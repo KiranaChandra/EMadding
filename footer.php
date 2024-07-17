@@ -2,7 +2,7 @@
     <div class="text-center position-relative">
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Berita</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>E-Madding</span></strong>. All Rights Reserved
             </div>
         </div>
     </div>
