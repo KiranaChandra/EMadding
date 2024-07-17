@@ -56,7 +56,7 @@ function getBulan($bln)
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Berita</title>
+    <title>E-Madding</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -83,7 +83,7 @@ function getBulan($bln)
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
         <a href="index.php" class="logo d-flex align-items-center">
-          <h1>Berita<span>.</span></h1>
+          <h1>Emadding<span>.</span></h1>
         </a>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>

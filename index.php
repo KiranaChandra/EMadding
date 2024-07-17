@@ -10,7 +10,8 @@ include 'koneksi.php';
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
-					<h2 data-aos="fade-down">Selamat Datang Di Website <span>Berita</span></h2>
+					<h2 data-aos="fade-down">Selamat Datang Di Website <br><span>
+						E-Madding</span></h2>
 
 				</div>
 			</div>
@@ -63,4 +64,4 @@ include 'koneksi.php';
 </main>
 <?php
 include 'footer.php';
-?>
+?> 
