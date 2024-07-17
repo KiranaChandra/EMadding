@@ -91,7 +91,7 @@ function getBulan($bln)
         <nav id="navbar" class="navbar">
           <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="berita.php">Berita</a></li>
+            <li><a href="berita.php">Informasi</a></li>
             <li><a href="login.php">Login</a></li>
           </ul>
         </nav>
