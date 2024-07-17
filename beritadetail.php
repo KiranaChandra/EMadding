@@ -11,7 +11,7 @@ $detail = $ambil->fetch_assoc();
 <?php include 'header.php'; ?>
 <main id="main">
 
-	<div class="breadcrumbs d-flex align-items-center" style="background-image: url('home/assets/img/bgutama.jpg');">
+	<div class="breadcrumbs d-flex align-items-center" style="background-image: url('home/assets/img/kc.png');">
 		<div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
 			<h2>Informasi Selengkapnya</h2>
