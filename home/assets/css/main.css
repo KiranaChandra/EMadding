@@ -2580,7 +2580,7 @@
   --------------------------------------------------------------*/
   .footer {
     color: #fff;
-    background: url("../img/bgutama.jpg") top center no-repeat;
+    background-image: url("home/asset/img/kc.png") top center no-repeat;
     background-size: cover;
     font-size: 14px;
     padding: 80px 0 60px 0;
@@ -2589,7 +2589,7 @@
   
   .footer:before {
     content: "";
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(39, 97, 164, 0.8);
     position: absolute;
     inset: 0;
   }
