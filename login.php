@@ -18,9 +18,45 @@ include 'koneksi.php';
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<link href="sbadmin/assets_admin/css/sb-admin-2.min.css" rel="stylesheet">
 
+	<style>
+		body {
+			background-image: url('bgberita.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.container {
+			max-width: 600px; /* Sesuaikan ukuran container di sini */
+		}
+		.card {
+			background: rgba(255, 255, 255, 0.9); /* Transparan putih */
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		.form-group label {
+			display: flex;
+			align-items: center;
+			color: #4e73df;
+			font-weight: bold;
+		}
+		.form-group label i {
+			margin-right: 10px;
+		}
+		.btn-primary {
+			background-color: #4e73df;
+			border: none;
+		}
+		.btn-primary:hover {
+			background-color: #2e59d9;
+		}
+		.text-center h1 {
+			color: #4e73df;
+		}
+	</style>
+
 </head>
 
-<body class="bg-gradient-primary">
+<body>
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-xl-10 col-lg-12 col-md-9">
@@ -35,11 +71,11 @@ include 'koneksi.php';
 									</div>
 									<form class="user" method="post">
 										<div class="form-group">
-											<label>E-mail</label>
+											<label for="exampleInputEmail"><i class="fas fa-envelope"></i> E-mail</label>
 											<input type="email" class="form-control form-control-user" id="exampleInputEmail" name="email" aria-describedby="emailHelp" placeholder="Email / Username">
 										</div>
 										<div class="form-group">
-											<label>Password</label>
+											<label for="exampleInputPassword"><i class="fas fa-lock"></i> Password</label>
 											<input type="password" class="form-control form-control-user" name="password" id="exampleInputPassword" placeholder="Password">
 										</div>
 										<button type="submit" name="login" value="login" class="btn btn-primary btn-user btn-block">
