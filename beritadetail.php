@@ -19,7 +19,7 @@ include 'koneksi.php';
 	</div>
 
 	<section id="recent-blog-posts" class="recent-blog-posts">
-		<div class="container" data-aos="fade-up"">
+		<div class="container" data-aos="fade-up">
   <div class=" section-header">
 			<h2>Informasi Terkini</h2>
 		</div>
