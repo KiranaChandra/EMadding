@@ -83,7 +83,7 @@ function getBulan($bln)
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
         <a href="index.php" class="logo d-flex align-items-center">
-          <h1>Emadding<span>.</span></h1>
+          <h1>E-Madding<span>.</span></h1>
         </a>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>

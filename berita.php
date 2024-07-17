@@ -9,19 +9,19 @@ include 'koneksi.php';
 	<div class="breadcrumbs d-flex align-items-center" style="background-image: url('home/assets/img/bgutama.jpg');">
 		<div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-			<h2>Berita</h2>
+			<h2>EMadding</h2>
 			<ol>
 				<li><a href="index.php">Home</a></li>
-				<li>Berita</li>
+				<li>Emadding</li>
 			</ol>
 
 		</div>
 	</div>
 
 	<section id="recent-blog-posts" class="recent-blog-posts">
-		<div class="container" data-aos="fade-up"">
+		<div class="container" data-aos="fade-up">
   <div class=" section-header">
-			<h2>Berita</h2>
+			<h2>EMadding</h2>
 		</div>
 
 		<div class="row gy-5">

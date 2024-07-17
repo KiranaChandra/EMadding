@@ -10,7 +10,8 @@ include 'koneksi.php';
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
-					<h2 data-aos="fade-down">Selamat Datang Di Website <br><span>
+					<h2 data-aos="fade-down">Selamat Datang Di 
+						<br>Website<span>
 						E-Madding</span></h2>
 
 				</div>
