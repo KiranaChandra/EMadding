@@ -25,7 +25,7 @@ include 'koneksi.php';
 		</div>
 
 		<div class="row gy-5">
-			<?php $ambil = $koneksi->query("SELECT *FROM berita"); ?>
+			<?php $ambil = $koneksi->query("SELECT * FROM berita ORDER BY tanggal DESC"); ?>
 			<?php while ($perberita = $ambil->fetch_assoc()) { ?>
 				<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
 					<div class="post-item position-relative h-100">

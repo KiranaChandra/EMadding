@@ -34,35 +34,35 @@ include 'koneksi.php';
 </section>
 <section id="recent-blog-posts" class="recent-blog-posts">
 	<div class="container" data-aos="fade-up">
-  <div class=" section-header">
-		<h2>Informasi Terkini</h2>
-	</div>
+		<div class="section-header">
+			<h2>Informasi Terkini</h2>
+		</div>
 
-	<div class="row gy-5">
-		<?php $ambil = $koneksi->query("SELECT *FROM berita limit 3"); ?>
-		<?php while ($perberita = $ambil->fetch_assoc()) { ?>
-			<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-				<div class="post-item position-relative h-100">
+		<div class="row gy-5">
+			<?php $ambil = $koneksi->query("SELECT * FROM berita ORDER BY tanggal DESC LIMIT 3"); ?>
+			<?php while ($perberita = $ambil->fetch_assoc()) { ?>
+				<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+					<div class="post-item position-relative h-100">
 
-					<div class="post-img position-relative overflow-hidden">
-						<img src="foto/<?php echo $perberita['foto'] ?>" class="img-fluid" alt="">
-						<span class="post-date"><?= $perberita['tanggal'] ?></span>
-					</div>
+						<div class="post-img position-relative overflow-hidden">
+							<img src="foto/<?php echo $perberita['foto'] ?>" class="img-fluid" alt="">
+							<span class="post-date"><?= $perberita['tanggal'] ?></span>
+						</div>
 
-					<div class="post-content d-flex flex-column">
+						<div class="post-content d-flex flex-column">
 
-						<h3 class="post-title"><?= $perberita['judul'] ?></h3>
-						<hr>
-						<a href="beritadetail.php?id=<?php echo $perberita['idberita']; ?>" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+							<h3 class="post-title"><?= $perberita['judul'] ?></h3>
+							<hr>
+							<a href="beritadetail.php?id=<?php echo $perberita['idberita']; ?>" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+						</div>
 					</div>
 				</div>
-			</div>
-		<?php } ?>
-	</div>
+			<?php } ?>
+		</div>
 	</div>
 </section>
 
 </main>
 <?php
 include 'footer.php';
-?> 
+?>
