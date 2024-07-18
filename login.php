@@ -69,7 +69,7 @@ include 'koneksi.php';
 							<div class="col-lg-12">
 								<div class="p-5">
 									<div class="text-center">
-										<h1 class="h4 text-gray-900 mb-4">Silahkan Login</h1>
+										<h1 class="h4 text-gray-900 mb-4">LOGIN PAGE</h1>
 									</div>
 									<form class="user" method="post">
 										<div class="form-group">
@@ -81,7 +81,7 @@ include 'koneksi.php';
 											<input type="password" class="form-control form-control-user" name="password" id="exampleInputPassword" placeholder="Password">
 										</div>
 										<button type="submit" name="login" value="login" class="btn btn-primary btn-user btn-block">
-											Login
+											Masuk
 										</button>
 									</form>
 								</div>
@@ -97,22 +97,24 @@ include 'koneksi.php';
 	if (isset($_POST["login"])) {
 		$email = $_POST["email"];
 		$password = $_POST["password"];
-		$ambil = $koneksi->query("SELECT * FROM pengguna
-		WHERE email='$email' AND password='$password' limit 1");
+		$ambil = $koneksi->query("SELECT * FROM pengguna WHERE email='$email' limit 1");
 		$akunyangcocok = $ambil->num_rows;
 		if ($akunyangcocok == 1) {
 			$akun = $ambil->fetch_assoc();
-			if ($akun['level'] == "Pelanggan") {
-				$_SESSION["pengguna"] = $akun;
-				echo "<script> alert('Anda sukses login');</script>";
-				echo "<script> location ='index.php';</script>";
-			} elseif ($akun['level'] == "Admin") {
-				$_SESSION['admin'] = $akun;
-				echo "<script> location ='admin/index.php';</script>";
+			if ($akun['password'] == $password) {
+				if ($akun['level'] == "Pelanggan") {
+					$_SESSION["pengguna"] = $akun;
+					echo "<script> alert('Anda sukses login');</script>";
+					echo "<script> location ='index.php';</script>";
+				} elseif ($akun['level'] == "Admin") {
+					$_SESSION['admin'] = $akun;
+					echo "<script> location ='admin/index.php';</script>";
+				}
+			} else {
+				echo "<script> alert('Password salah, coba lagi');</script>";
 			}
 		} else {
-			echo "<script> alert('Anda gagal login, Cek akun anda');</script>";
-			echo "<script> location ='login.php';</script>";
+			echo "<script> alert('Email tidak ditemukan, coba lagi');</script>";
 		}
 	}
 	?>
