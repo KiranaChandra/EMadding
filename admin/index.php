@@ -4,9 +4,9 @@ session_start();
 include '../koneksi.php';
 
 if (!isset($_SESSION['admin'])) {
-    echo "<script>alert('Anda Harus Login');</script>";
+    echo "<script>alert('Anda tidak dapat mengakses halaman ini.');</script>";
     echo "<script>location='login.php';</script>";
-    header('location:login.php');
+    header('location: login.php');
     exit();
 }
 function tanggal($tgl)
@@ -73,7 +73,7 @@ function getBulan($bln)
         <link rel="stylesheet" href="assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
         <link href="css/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <script src="assets/ckeditor/ckeditor.js"></script>
-        <link rel="icon" type="image/x-icon" href="../foto/logo.jpeg">
+        <link rel="icon" type="image/x-icon" href="../img/iconm.jpg">
     </head>
 
     <body id="page-top">
@@ -96,7 +96,7 @@ function getBulan($bln)
                 </li>
                 <hr class="sidebar-divider">
                 <li class="nav-item">
-                    <a class="nav-link" onclick="return confirm('Apakah Anda Yakin Ingin Keluar ?');" href="index.php?halaman=logout">
+                    <a class="nav-link" onclick="return confirm('Keluar?');" href="index.php?halaman=logout">
                         <i class="fas fa-fw fa-power-off"></i>
                         <span>Log Out</span></a>
                 </li>
@@ -110,7 +110,7 @@ function getBulan($bln)
 
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item dropdown no-arrow">
-                                <a onclick="return confirm('Apakah Anda Yakin Ingin Keluar ?');" class="nav-link" href="index.php?halaman=logout">
+                                <a onclick="return confirm('Keluar?');" class="nav-link" href="index.php?halaman=logout">
                                     <span class="mr-2 d-none d-lg-inline text-gray-600 small"> Keluar</span>
                                 </a>
                             </li>
