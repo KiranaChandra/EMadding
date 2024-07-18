@@ -7,7 +7,7 @@ $jumlahberita = $berita->num_rows;
 <div class="row mb-3">
     <div class="col-md-12">
         <center>
-            <img src="../foto/welcome.jpg" width="80%" style="border-radius: 10px">
+            <img src="../foto/it.png" width="100%" style="border-radius: 10px">
         </center>
     </div>
 </div>
