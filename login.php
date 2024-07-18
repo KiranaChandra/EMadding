@@ -73,7 +73,7 @@ include 'koneksi.php';
 									</div>
 									<form class="user" method="post">
 										<div class="form-group">
-											<label for="exampleInputEmail"><i class="fas fa-envelope"></i> E-mail</label>
+											<label for="exampleInputEmail"><i class="fas fa-envelope"></i> E-Mail</label>
 											<input type="email" class="form-control form-control-user" id="exampleInputEmail" name="email" aria-describedby="emailHelp" placeholder="Email">
 										</div>
 										<div class="form-group">
@@ -108,7 +108,6 @@ include 'koneksi.php';
 				echo "<script> location ='index.php';</script>";
 			} elseif ($akun['level'] == "Admin") {
 				$_SESSION['admin'] = $akun;
-				echo "<script> alert('Anda sukses login');</script>";
 				echo "<script> location ='admin/index.php';</script>";
 			}
 		} else {
